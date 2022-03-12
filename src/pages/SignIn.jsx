@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { toast } from 'react-toastify';
+import { OAuth } from '../components';
 import { Link, useNavigate } from 'react-router-dom';
 import { ReactComponent as ArrowRightIcon } from '../assets/svg/keyboardArrowRightIcon.svg';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
@@ -44,7 +45,7 @@ function SignIn() {
 
   return (
     <>
-      <div className='pageContainer'>
+      <div className='pageContainer profile'>
         <header>
           <p className='pageHeader'>Welcome Back!</p>
         </header>
@@ -87,13 +88,11 @@ function SignIn() {
               <ArrowRightIcon fill='#ffffff' width='34px' height='34px' />
             </button>
           </div>
+          <Link to='/sign-up' className='registerLink'>
+            Sign Up Instead
+          </Link>
         </form>
-
-        {/* Google OAuth */}
-
-        <Link to='/sign-up' className='registerLink'>
-          Sign Up Instead
-        </Link>
+        <OAuth />
       </div>
     </>
   );

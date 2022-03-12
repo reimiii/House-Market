@@ -41,12 +41,12 @@ function Navbar() {
             />
             <p
               className={
-                pathMatchRoute('/offers')
+                pathMatchRoute('/offer')
                   ? 'navbarListItemNameActive'
                   : 'navbarListItemName'
               }
             >
-              Offer
+              Offers
             </p>
           </li>
           <li className='navbarListItem' onClick={() => navigate('/profile')}>

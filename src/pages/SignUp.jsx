@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { OAuth } from '../components';
 import { Link, useNavigate } from 'react-router-dom';
 import { ReactComponent as ArrowRightIcon } from '../assets/svg/keyboardArrowRightIcon.svg';
 import visibilityIcon from '../assets/svg/visibilityIcon.svg';
@@ -112,12 +113,11 @@ function SignUp() {
               <ArrowRightIcon fill='#ffffff' width='34px' height='34px' />
             </button>
           </div>
-          <Link to='/sign-in' className='registerLink'>
-            Sign In Instead
-          </Link>
         </form>
-
-        <br />
+        <OAuth />
+        <Link to='/sign-in' className='registerLink'>
+          Sign In Instead
+        </Link>
       </div>
     </>
   );

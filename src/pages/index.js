@@ -4,5 +4,16 @@ import Profile from './Profile';
 import SignIn from './SignIn';
 import SignUp from './SignUp';
 import ForgotPassword from './ForgotPassword';
+import Category from './Category';
+import CreateListing from './CreateListing';
 
-export { Explore, Offers, Profile, SignIn, SignUp, ForgotPassword };
+export {
+  CreateListing,
+  Explore,
+  Offers,
+  Profile,
+  SignIn,
+  SignUp,
+  ForgotPassword,
+  Category,
+};
