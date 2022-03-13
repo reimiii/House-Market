@@ -3,5 +3,6 @@ import PrivateRoute from './PrivateRoute';
 import Spinner from './Spinner';
 import OAuth from './OAuth';
 import ListingItem from './ListingItem';
+import Slider from './Slider';
 
-export { Navbar, PrivateRoute, Spinner, OAuth, ListingItem };
+export { Slider, Navbar, PrivateRoute, Spinner, OAuth, ListingItem };
